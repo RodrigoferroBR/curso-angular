@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.1",
+  "description": "Backend da Aplicação",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server --watch db.json --host 192.168.15.38 --port 3001"
+  },
+  
+  "author": "Rodrigo Ferro",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
