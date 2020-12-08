@@ -1,7 +1,7 @@
 <h1 align="center">Angular - One framework. Mobile & desktop.</h1>
 
 <p align="center">
-  <img src="aio/src/assets/images/logos/angular/angular.png" alt="angular-logo" width="120px" height="120px"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/768px-Angular_full_color_logo.svg.png" alt="angular-logo" width="120px" height="120px"/>
   <br>
   <i>Angular is a development platform for building mobile and desktop web applications
     <br> using Typescript/JavaScript and other languages.</i>
