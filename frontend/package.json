@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "dev": "ng serve --host 192.168.15.38 --open"
+    "dev": "ng serve --host 192.168.12.50 --open"
   },
   "private": true,
   "dependencies": {

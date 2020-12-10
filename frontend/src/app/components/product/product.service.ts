@@ -9,7 +9,7 @@ import { Produto } from './product.model';
 })
 export class ProductService {
 
-  baseUrl = 'http://192.168.15.38:3001/produtos';
+  baseUrl = 'http://192.168.12.50:3001/produtos';
 
   constructor(private snackBar: MatSnackBar, 
     private http: HttpClient) { }
@@ -30,5 +30,14 @@ export class ProductService {
     return this.http.get<Produto[]>(this.baseUrl)
   }
 
+  readById(id: string): Observable<Produto> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Produto>(url)
+  }
+
+  update(produto: Produto): Observable<Produto> {
+    const url = `${this.baseUrl}/${produto.id}`
+    return this.http.put<Produto>(url, produto)
+  }
 
 }
