@@ -1,64 +1,14 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "name": "Jaleco",
-      "price": 998.25
+      "name": "Avast",
+      "price": "99.00",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Avental",
-      "price": 998.25
-    },
-    {
-      "id": 3,
-      "name": "Touca",
-      "price": 998.25
-    },
-    {
-      "id": 4,
-      "name": "Fronha",
-      "price": 998.25
-    },
-    {
-      "id": 5,
-      "name": "Embalagem",
-      "price": 998.25
-    },
-    {
-      "id": 6,
-      "name": "Porta talher",
-      "price": 998.25
-    },
-    {
-      "id": 7,
-      "name": "Porta Sapatos",
-      "price": 998.25
-    },
-    {
-      "name": "DADOS",
-      "price": "5.99",
-      "id": 8
-    },
-    {
-      "name": "SERVER-WIN",
-      "price": "18798.77",
-      "id": 9
-    },
-    {
-      "name": "Diblim",
-      "price": "25.38",
-      "id": 10
-    },
-    {
-      "name": "FERMENTO",
-      "price": "25,35",
-      "id": 11
-    },
-    {
-      "name": "TOP",
-      "price": "55.35",
-      "id": 12
+      "name": "Bitdefender",
+      "price": "58.99",
+      "id": 2
     }
   ]
 }

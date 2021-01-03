@@ -45,6 +45,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "sourceMap": true,
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -61,7 +62,7 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "prod": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -87,6 +88,22 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "devh": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.devh.ts"
+                }
+              ]
+            },
+            "devw": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.devw.ts"
+                }
+              ]
             }
           }
         },
@@ -96,8 +113,14 @@
             "browserTarget": "frontend:build"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "frontend:build:production"
+            "prod": {
+              "browserTarget": "frontend:build:prod"
+            },
+            "devh": {
+              "browserTarget": "frontend:build:devh"
+            },
+            "devw": {
+              "browserTarget": "frontend:build:devw"
             }
           }
         },

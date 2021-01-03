@@ -10,3 +10,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .central-meio {
     vertical-align: middle;
 }
+
+.msg-sucesso {
+    background-color: #28a745;
+    color: azure;
+}
+
+.msg-delete {
+    background-color: red;
+    color: azure;
+}

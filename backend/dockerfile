@@ -1,0 +1,7 @@
+FROM node:latest as build
+WORKDIR /usr/app/backend
+COPY package*json ./
+RUN yarn install
+COPY . .
+EXPOSE 3001
+CMD ["yarn", "start"]

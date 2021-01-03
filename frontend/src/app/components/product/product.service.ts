@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
@@ -9,16 +10,19 @@ import { Produto } from './product.model';
 })
 export class ProductService {
 
-  baseUrl = 'http://192.168.12.50:3001/produtos';
+  baseUrl: string;
 
   constructor(private snackBar: MatSnackBar, 
-    private http: HttpClient) { }
+    private http: HttpClient) { 
+      this.baseUrl = environment.baseUrl
+    }
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: "center",
-      verticalPosition: "bottom"
+      verticalPosition: "top",
+      panelClass: ['msg-sucesso']
     })
   }
 
@@ -39,5 +43,12 @@ export class ProductService {
     const url = `${this.baseUrl}/${produto.id}`
     return this.http.put<Produto>(url, produto)
   }
+
+  delete(id: number): Observable<Produto> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Produto>(url);
+  }
+
+  
 
 }
