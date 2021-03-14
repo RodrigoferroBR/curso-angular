@@ -1,0 +1,5 @@
+docker build -t backend .
+docker run --restart=always -d --name backend -p 3001:80 backend
+
+docker build -t frontend .
+docker run --restart=always -d --name frontend -p 4200:80 frontend

@@ -1,0 +1,16 @@
+{
+  "gerentes": [
+    {
+      "nome": "Rodrigo Ferro",
+      "agencia": 1484
+    },
+    {
+      "nome": "Renato Ferro",
+      "agencia": 2892
+    },
+    {
+      "nome": "Rogerio Ferro",
+      "agencia": 3547
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "produtos": [
+    {
+      "name": "Avast",
+      "price": "99.00",
+      "id": 1
+    },
+    {
+      "name": "Bitdefender",
+      "price": "58.99",
+      "id": 2
+    }
+  ]
+}
